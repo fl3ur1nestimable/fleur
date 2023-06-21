@@ -76,6 +76,7 @@ body{
 .ayeb h2{
   color : white;
   font-weight: bold;
+  visibility: hidden;
 }
 
 .fleur h1{
@@ -85,6 +86,8 @@ body{
 .fleur h2{
   font-weight: bold;
   color : white;
+  visibility: hidden;
+  
 }
   
 .right:hover .ayeb h1{
@@ -97,6 +100,11 @@ body{
 
 .left:hover .fleur h2{
   color : rgb(0, 162, 255);
+  visibility: visible;
+}
+
+.right:hover .ayeb h2{
+  visibility: visible;
 }
 
 .left button{
