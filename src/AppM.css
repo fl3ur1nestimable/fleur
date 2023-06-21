@@ -1,0 +1,82 @@
+.splitM {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    transition-duration: 0.4s;
+    overflow-x: hidden;
+}
+
+.topM{
+    top: 0;
+}
+
+.bot{
+    bottom: 0;
+}
+
+.splitM img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-duration: 0.4s;
+    opacity: 0.7;
+}
+
+.fleurM{
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.ayebM{
+    float: right;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    text-align: center;
+    transform: translate(-50%,-50%);    
+}
+
+.ayebM h1{
+    color : rgb(255, 0, 85);
+}
+
+.ayebM h2{
+    color : white;
+}
+
+.fleurM h1{
+    color : rgb(133, 73, 24);
+}
+
+.fleurM h2{
+    color : rgb(0, 162, 255);
+}
+
+.top button{
+  background-color: rgb(0, 162, 255);
+  border : 2px solid rgb(133, 73, 24);
+  color: white;
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.bot button{
+    background-color: rgb(255, 0, 85);
+    border : 2px solid white;
+    color: white;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+  }
