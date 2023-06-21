@@ -9,7 +9,7 @@ function App() {
           <h2>Music | Sports | Socials</h2>
           <button className="btn_left">Let's go</button>
         </div>
-        <img src="arrivalyellow.png" alt="arrivalyellow" className='imgbanner'/>
+        <img src="arrivalyellowfull.png" alt="arrivalyellow" className='imgbanner'/>
       </div>
       <div className= "split right">
         <div className="ayeb">
@@ -17,7 +17,7 @@ function App() {
           <h2>Portfolio | Resume | Projects</h2>
           <button className="btn_right">Enter</button>
         </div>
-        <img src="arrivalrose.png" alt="arrivalrose" className='imgbanner' />
+        <img src="arrivalrosefull.png" alt="arrivalrose" className='imgbanner' />
       </div>
     </>
   );

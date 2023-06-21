@@ -11,6 +11,7 @@ body{
   display: flex;
   flex-flow: column;
   transition-duration: 0.4s;
+  overflow-x: hidden;
 }
 
 .left{
@@ -34,7 +35,6 @@ body{
   object-fit: cover;
   filter: grayscale(1);
   transition-duration: 0.4s;
-  opacity: 0.6;
 }
 
 .left img:hover,
@@ -135,6 +135,22 @@ body{
 .btn_left:hover{
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.left:hover{
+  width: 55%;
+}
+
+.left:hover ~ .right{
+  width: 45%;
+}
+
+.right:hover{
+  width: 55%;
+}
+
+.right:hover ~ .left{
+  width: 45%;
 }
 
 
