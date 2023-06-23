@@ -1,15 +1,9 @@
 import './Welcome.css';
 import './WelcomeM.css';
 import React from 'react';
+import Fleur from './Fleur';
+import Ayeb from './Ayeb';
 function Welcome() {
-
-  const redirectAyeb = () => {
-    window.location.href = '/ayeb';
-  }
-
-  const redirectFleur = () => {
-    window.location.href = '/fleur';
-  }
 
   const animateRightClicked = () => {
     let right = document.getElementById('right');
@@ -58,9 +52,6 @@ function Welcome() {
       right.style.transition = 'height 1s ease-in-out';
       right.style.height = '0%';
     }, 3000);
-    setTimeout(() => {
-    redirectAyeb();
-    }, 4000);
   }
 
   const animateLeftClicked = () => {
@@ -113,9 +104,7 @@ function Welcome() {
       left.style.transition = 'height 1s ease-in-out';
       left.style.height = '0%';
     }
-      , 3000);
-    setTimeout(() => {
-    redirectFleur();}, 4000);
+      , 3000);;
   }
 
   const animateTopClicked = () => {
@@ -163,8 +152,6 @@ function Welcome() {
       top.style.transition = 'transform 1s ease-in-out';
       top.style.transform = 'translateX(-100%)';
     }, 3000);
-    setTimeout(() => {
-    redirectFleur();}, 4000); 
   }
 
   const animateBotClicked = () => {
@@ -211,9 +198,6 @@ function Welcome() {
       bot.style.transition = 'transform 1s ease-in-out';
       bot.style.transform = 'translateX(100%)';
     }, 3000);
-    setTimeout(() => {
-    redirectAyeb();
-    }, 4000);
   }
 
 
