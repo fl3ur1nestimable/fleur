@@ -1,0 +1,46 @@
+#bannerfleur {
+    position: fixed;
+    top: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0.25turn, #8C52FF, #FF914D);
+}
+
+#bannercontent {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contentleft {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contentright {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titlefleur {
+    font-size: 42px;
+    color: white;
+    font-weight: bold;
+}
+
+#wlcmsgp {
+    color: white;
+    background-image: linear-gradient(0.25turn, #5170FF, #FF66C4);
+    border-radius: 3px;
+    padding: 5px;
+}

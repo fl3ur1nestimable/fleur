@@ -1,9 +1,14 @@
 import './Welcome.css';
 import './WelcomeM.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Fleur from './Fleur';
 import Ayeb from './Ayeb';
 function Welcome() {
+
+  const [viewState, setViewState] = useState({
+    fleur: false,
+    ayeb: false
+  });
 
   const animateRightClicked = () => {
     let right = document.getElementById('right');
@@ -52,6 +57,12 @@ function Welcome() {
       right.style.transition = 'height 1s ease-in-out';
       right.style.height = '0%';
     }, 3000);
+    setTimeout(() => {
+      setViewState({
+        fleur: false,
+        ayeb: true
+      });
+    }, 2000);
   }
 
   const animateLeftClicked = () => {
@@ -105,6 +116,12 @@ function Welcome() {
       left.style.height = '0%';
     }
       , 3000);;
+    setTimeout(() => {
+      setViewState({
+        fleur: true,
+        ayeb: false
+      });
+    }, 2000);
   }
 
   const animateTopClicked = () => {
@@ -152,6 +169,12 @@ function Welcome() {
       top.style.transition = 'transform 1s ease-in-out';
       top.style.transform = 'translateX(-100%)';
     }, 3000);
+    setTimeout(() => {
+      setViewState({
+        fleur: true,
+        ayeb: false
+      });
+    }, 2000);
   }
 
   const animateBotClicked = () => {
@@ -198,6 +221,12 @@ function Welcome() {
       bot.style.transition = 'transform 1s ease-in-out';
       bot.style.transform = 'translateX(100%)';
     }, 3000);
+    setTimeout(() => {
+      setViewState({
+        fleur: false,
+        ayeb: true
+      });
+    }, 2000);
   }
 
 
@@ -253,6 +282,16 @@ function Welcome() {
               </div>
               <img src="arrivalrosefull.png" alt="arrivalrose" id='imgright' />
             </div>
+            {
+              viewState.fleur ? (
+                <Fleur />
+              ) : (null)
+            }
+            {
+              viewState.ayeb ? (
+                <Ayeb />
+              ) : (null)
+            }
           </>
         )
       }
