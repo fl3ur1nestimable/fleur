@@ -17,6 +17,8 @@ function Welcome() {
     let imgright = document.getElementById('imgright');
     imgright.style.filter = 'grayscale(0)';
     let left = document.getElementById('left');
+    left.style.transition = 'width 1s ease-in-out';
+    left.style.width = '0%';
     let btnright = document.getElementById('btn_right');
     btnright.style.visibility = 'hidden';
     let mainright = document.getElementById('mainright');
@@ -24,7 +26,6 @@ function Welcome() {
     let subright = document.getElementById('subright');
     subright.style.visibility = 'visible';
     setTimeout(() => {
-      left.remove();
       var i = 0;
       function move() {
         if (i === 0) {
@@ -72,6 +73,8 @@ function Welcome() {
     left.style.width = '100%';
     left.style.zIndex = '2';
     let right = document.getElementById('right');
+    right.style.transition = 'width 1s ease-in-out';
+    right.style.width = '0%';
     let imgleft = document.getElementById('imgleft');
     imgleft.style.filter = 'grayscale(0)';
     let btnleft = document.getElementById('btn_left');
@@ -82,7 +85,6 @@ function Welcome() {
     subleft.style.visibility = 'visible';
     subleft.style.color = 'rgb(0, 162, 255)';
     setTimeout(() => {
-      right.remove();
       var i = 0;
       function move() {
         if (i === 0) {
@@ -141,7 +143,6 @@ function Welcome() {
     subtop.style.visibility = 'visible';
     subtop.style.color = 'rgb(0, 162, 255)';
     setTimeout(() => {
-      bot.remove();
       var i = 0;
       function move() {
         if (i === 0) {
@@ -193,7 +194,6 @@ function Welcome() {
     let subbot = document.getElementById('subbot');
     subbot.style.visibility = 'visible';
     setTimeout(() => {
-      top.remove();
       var i = 0;
       function move() {
         if (i === 0) {

@@ -15,9 +15,7 @@ function Ayeb() {
             <div id='ayebpage'>
               <div id='banner ayeb'>
                 <div id='menu'>
-                  <button id='btn_menu'>Portfolio</button>
-                  <button id='btn_menu'>Resume</button>
-                  <button id='btn_menu'>Projects</button>
+                  42
                 </div>
               </div>
             </div>

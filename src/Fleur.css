@@ -1,46 +1,100 @@
-#bannerfleur {
+#fleurpage{
+    width : 100%;
+    height : 100%;
+    position : fixed;
+}
+
+#petale{
     position: fixed;
-    top: 0;
-    height: 30%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(0.25turn, #8C52FF, #FF914D);
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    width : 276px;
+    height : 276px;
 }
 
-#bannercontent {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contentleft {
+#centerfraise{
     width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 40%;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-#contentright {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+#fraise{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
 }
 
-#titlefleur {
-    font-size: 42px;
-    color: white;
-    font-weight: bold;
+#petalenoir{
+    border : 2px solid black;
+    position: absolute;
+    background-color: black;
+    width: 114px;
+    height: 114px;
+    z-index: 0;
+    right: 50%;
+    transform: translate(50%,0) rotate(45deg);
+    transition-duration: 0.4s;
 }
 
-#wlcmsgp {
-    color: white;
-    background-image: linear-gradient(0.25turn, #5170FF, #FF66C4);
-    border-radius: 3px;
-    padding: 5px;
+#petalebrown{
+    border: none;
+    position: absolute;
+    background-color: #863B0B;
+    border: #863B0B 2px solid;
+    width: 114px;
+    height: 114px;
+    z-index: 0;
+    right: 0;
+    top : 50%;
+    transform: translate(0,-50%) rotate(45deg);
+    transition-duration: 0.4s;
+}
+
+#petaleblue{
+    position: absolute;
+    background-color: #5CE1E6;
+    border: #5CE1E6 2px solid;
+    width: 114px;
+    height: 114px;
+    z-index: 0;
+    bottom: 0;
+    left : 50%;
+    transform: translate(-50%,0) rotate(45deg);
+    transition-duration: 0.4s;
+}
+
+#petalejaune{
+    border: 2px solid #FFDE59;
+    position: absolute;
+    background-color: #FFDE59;
+    width: 114px;
+    height: 114px;
+    z-index: 0;
+    left: 0;
+    top : 50%;
+    transform: translate(0,-50%) rotate(45deg);
+    transition-duration: 0.4s;
+}
+
+#petalenoir:hover{
+    transform: translate(50%,-15%) rotate(45deg);
+}
+
+#petalebrown:hover{
+    transform: translate(15%,-50%) rotate(45deg);
+}
+
+#petaleblue:hover{
+    transform: translate(-50%,15%) rotate(45deg);
+}
+
+#petalejaune:hover{
+    transform: translate(-15%,-50%) rotate(45deg);
 }
