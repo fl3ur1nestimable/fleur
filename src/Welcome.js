@@ -1,8 +1,6 @@
 import './Welcome.css';
 import './WelcomeM.css';
 import React, { useEffect, useState } from 'react';
-import Fleur from './Fleur';
-import Ayeb from './Ayeb';
 function Welcome() {
 
   const [viewState, setViewState] = useState({
@@ -63,7 +61,8 @@ function Welcome() {
         fleur: false,
         ayeb: true
       });
-    }, 2000);
+      window.location.href = '/ayeb';
+    }, 4000);
   }
 
   const animateLeftClicked = () => {
@@ -123,7 +122,8 @@ function Welcome() {
         fleur: true,
         ayeb: false
       });
-    }, 2000);
+      window.location.href = '/fleur';
+    }, 4000);
   }
 
   const animateTopClicked = () => {
@@ -175,7 +175,8 @@ function Welcome() {
         fleur: true,
         ayeb: false
       });
-    }, 2000);
+      window.location.href = '/fleur';
+    }, 4000);
   }
 
   const animateBotClicked = () => {
@@ -226,7 +227,8 @@ function Welcome() {
         fleur: false,
         ayeb: true
       });
-    }, 2000);
+      window.location.href = '/ayeb';
+    }, 4000);
   }
 
 
@@ -282,16 +284,6 @@ function Welcome() {
               </div>
               <img src="arrivalrosefull.png" alt="arrivalrose" id='imgright' />
             </div>
-            {
-              viewState.fleur ? (
-                <Fleur />
-              ) : (null)
-            }
-            {
-              viewState.ayeb ? (
-                <Ayeb />
-              ) : (null)
-            }
           </>
         )
       }
