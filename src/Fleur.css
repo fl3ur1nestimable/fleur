@@ -15,6 +15,15 @@
     }
 }
 
+@keyframes rotate{
+    from{
+        transform : translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform : translate(-50%,-50%) rotate(360deg);
+    }
+}
+
 #petale{
     position: fixed;
     top : 50%;
@@ -109,3 +118,95 @@
 #petalejaune:hover{
     transform: translate(-15%,-50%) rotate(45deg);
 }
+
+#noir, #jaune, #blue, #brown{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#noir{
+    position : absolute;
+    width : 100%;
+    height: 30%;
+    top : 0;
+    color : #E32B43;
+    justify-content: center;
+}
+
+#blue{
+    position : absolute;
+    width : 100%;
+    height: 30%;
+    bottom : 0;
+}
+
+#jaune{
+    position : relative;
+    width : 39%;
+    height: 80%;
+    left : 0;
+    top : 50%;
+    transform: translate(0,-50%);
+    color : #863B0B;
+    justify-content: center;
+}
+
+#brown{
+    position : absolute;
+    width : 39%;
+    height: 80%;
+    right : 0;
+    top : 50%;
+    transform: translate(0,-50%);
+    justify-content: center;
+}
+
+#pick{
+    font-size: 50px;
+    transition-duration: 1s;
+}
+
+#pickp{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+
+#titlenoir, #titleblue, #titlejaune, #titlebrown{
+    display: none;
+}
+
+#textnoir, #textblue, #textjaune, #textbrown{
+    display: none;
+}
+
+#titlenoir,#textnoir{
+    color : white;
+}
+
+#titleblue,#textblue{
+    color : black;
+}
+
+#titlejaune,#textjaune{
+    color : black;
+}
+
+#titlebrown,#textbrown{
+    color : white;
+}
+
+@keyframes opacityAnim{
+    from{
+        opacity : 0;
+    }
+    to{
+        opacity : 1;
+    }
+}
+
+#insta{
+    transform: scale(0.1);
+    margin : 0px;
+}
+
