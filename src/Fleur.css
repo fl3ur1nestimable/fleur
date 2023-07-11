@@ -142,7 +142,7 @@
 }
 
 #jaune{
-    position : relative;
+    position : fixed;
     width : 39%;
     height: 80%;
     left : 0;
@@ -205,8 +205,88 @@
     }
 }
 
-#insta{
-    transform: scale(0.1);
-    margin : 0px;
+#insta,#discord,#ytb,#twitch{
+    transform: unset;
+    width: 50;
+    height: 50px;
+    margin-right: 10px;
 }
 
+#instadiv,#discorddiv,#ytbdiv,#twitchdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials{
+    display: none;
+    color: black;
+}
+
+#socials a{
+    text-decoration: none;
+    color: black;
+}
+
+#socials a:hover{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#discorddiv h2:hover{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+ #rose,#rose2{
+    filter: brightness(0) invert(1);
+    display: none;
+ }
+
+@keyframes inout{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.wing{
+    filter: invert(1);
+    transform: scale(0.5);
+    display: none;
+}
+
+.rw{
+    transform: rotate(90deg) scale(0.5);
+}
+
+.lw{
+    transform: rotate(-90deg) scale(0.5);
+}
+
+#spotify{
+    border : none;
+}
+
+#spotifydiv{
+    display : none;
+}
+
+#scdiv{
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+}

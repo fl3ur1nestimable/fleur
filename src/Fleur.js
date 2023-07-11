@@ -50,6 +50,20 @@ function Fleur() {
         titlebrown.style.display = "none";
         let textbrown = document.getElementById("textbrown");
         textbrown.style.display = "none";
+        let socials = document.getElementById("socials");
+        socials.style.display = "none";
+        let rose2 = document.getElementById("rose");
+        rose2.style.display = "none";
+        let otherrose2 = document.getElementById("rose2");
+        otherrose2.style.display = "none";
+        let wing = document.getElementById("wing");
+        wing.style.display = "block";
+        wing.style.animation = "opacityAnim 1s linear";
+        let wing6 = document.getElementById("wing2");
+        wing6.style.display = "block";
+        wing6.style.animation = "opacityAnim 1s linear";
+        let spotifydiv = document.getElementById("spotifydiv");
+        spotifydiv.style.display = "none";
         break;
 
       case "jaune":
@@ -89,6 +103,22 @@ function Fleur() {
         titlebrown2.style.display = "none";
         let textbrown2 = document.getElementById("textbrown");
         textbrown2.style.display = "none";
+        let socials2 = document.getElementById("socials");
+        socials2.style.display = "block";
+        socials2.style.animation = "opacityAnim 1s linear";
+        let rose = document.getElementById("rose");
+        rose.style.display = "block";
+        rose.style.animation = "opacityAnim 1s linear, inout 2s linear infinite";
+        let otherrose = document.getElementById("rose2");
+        otherrose.style.display = "none";
+        let wing2 = document.getElementById("wing");
+        wing2.style.display = "none";
+        let wing5 = document.getElementById("wing2");
+        wing5.style.display = "none";
+        let bluediv = document.getElementById("blue");
+        bluediv.style.display = "none";
+        let spotifydiv2 = document.getElementById("spotifydiv");
+        spotifydiv2.style.display = "none";
         break;
 
       case "blue":
@@ -128,6 +158,22 @@ function Fleur() {
         titlebrown3.style.display = "none";
         let textbrown3 = document.getElementById("textbrown");
         textbrown3.style.display = "none";
+        let socials3 = document.getElementById("socials");
+        socials3.style.display = "none";
+        let rose3 = document.getElementById("rose");
+        rose3.style.display = "none";
+        let otherrose3 = document.getElementById("rose2");
+        otherrose3.style.display = "none";
+        let wing3 = document.getElementById("wing");
+        wing3.style.display = "block";
+        wing3.style.animation = "opacityAnim 1s linear";
+        let sim = document.getElementById("wing2");
+        sim.style.display = "block";
+        sim.style.animation = "opacityAnim 1s linear";
+        let bluediv2 = document.getElementById("blue");
+        bluediv2.style.display = "block";
+        let spotifydiv3 = document.getElementById("spotifydiv");
+        spotifydiv3.style.display = "none";
         break;
 
       case "brown":
@@ -167,6 +213,21 @@ function Fleur() {
         titlejaune4.style.display = "none";
         let textjaune4 = document.getElementById("textjaune");
         textjaune4.style.display = "none";
+        let socials4 = document.getElementById("socials");
+        socials4.style.display = "none";
+        let rose4 = document.getElementById("rose");
+        rose4.style.display = "none";
+        let otherrose4 = document.getElementById("rose2");
+        otherrose4.style.display = "block";
+        otherrose4.style.animation = "opacityAnim 1s linear, inout 2s linear infinite";
+        let wing4 = document.getElementById("wing");
+        wing4.style.display = "none";
+        let sim4 = document.getElementById("wing2");
+        sim4.style.display = "none";
+        let bluediv3 = document.getElementById("blue");
+        bluediv3.style.display = "none";
+        let spotifydiv4 = document.getElementById("spotifydiv");
+        spotifydiv4.style.display = "block";
         break;
     }
     let picks = document.querySelectorAll('[id="pick"]');
@@ -271,8 +332,6 @@ function Fleur() {
 
   return (
     <>
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v17.0" nonce="a3WPTSHI"></script>
       {
         (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? (
           <>
@@ -300,9 +359,28 @@ function Fleur() {
               <div id='jaune'>
                 <h1 id='pick'>Pick</h1>
                 <h1 id='titlejaune'>Socials</h1>
-                <p id='textjaune'>Find me anywhere (not on tiktok tho).</p>
-                <h2><a href="https://www.instagram.com/fleur_inestimable/" target="_blank">Instagram</a></h2><img id='insta' src="insta.png" alt="instagram" />
-                
+                <p id='textjaune'>I try my best to share the things I do. Spread it to bring happiness and smiles to others :)<br></br>
+                I'm not very active everywhere, but hey, do not hesitate to DM me or just come and see!<br></br></p>
+                <div id='socials'>
+                  <div id='instadiv'>
+                    <a href="https://www.instagram.com/fleur_inestimable/" target="_blank"><img id='insta' src="insta.png" alt="instagram" /></a>
+                    <h2><a href="https://www.instagram.com/fleur_inestimable/" target="_blank">@fleur_inestimable</a></h2>
+                  </div>
+                  <div id='discorddiv'>
+                    <img id='discord' src="discord.png" alt="discord" />
+                    <h2>fl3ur_1nestimable</h2>
+                  </div>
+                  <div id='ytbdiv'>
+                    <a href="https://www.youtube.com/@fl3ur_1nestimable" target="_blank"><img id='ytb' src="ytb.png" alt="youtube" /></a>
+                    <h2><a href="https://www.youtube.com/@fl3ur_1nestimable" target="_blank">Fl3ur_1nestimable</a></h2>
+                  </div>
+                  <div id='twitchdiv'>
+                    <a href="https://www.twitch.tv/fl3ur_1nestimable" target="_blank"><img id='twitch' src="twitch.webp" alt="twitch" /></a>
+                    <h2><a href="https://www.twitch.tv/fl3ur_1nestimable" target="_blank">fl3ur_1nestimable</a></h2>
+                  </div>
+                </div>
+                <img id='wing2' className='wing lw' src='wings.png'/>
+                <img id='rose2' src='rose.png'/>
               </div>
               <div id="petale">
                 <button id="petalenoir" onClick={() => displaySelected("noir")}></button>
@@ -316,9 +394,16 @@ function Fleur() {
               <div id='brown'>
                 <h1 id='pick'>Your</h1>
                 <h1 id='titlebrown'>Music</h1>
-                <p id='textbrown'>Can't live without music.</p>
+                <p id='textbrown'>I Can't live without music.<br></br>I'm a musician, currently playing/learning piano and drums,<br></br>I want to play as many instruments as possible.<br></br>
+                I'm also a music producer, in the learning phase :D. I like jazz, electro, swing, latino, and more, improvising, just playing what I love, and of course, have fun!<br></br>If you want to play with me or do something, just contact me !</p>
+                <div id="spotifydiv">
+                <iframe id='spotify' src="https://open.spotify.com/embed/track/2Jk4bVmplmMxWdJIfLzuZh?utm_source=generator&theme=0" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       
+                <iframe id= 'sd'  width="80%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108319149&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+                <img id='rose' src='rose.png'/>
+                <img id='wing' className='wing rw' src='wings.png'/>
               </div>
-              <div id='blue'>
+              <div id='blue' hidden="false">
                 <h1 id='pick'>Poison</h1>
                 <h1 id='titleblue'>Sports</h1>
                 <p id='textblue'>I love sports.</p>
