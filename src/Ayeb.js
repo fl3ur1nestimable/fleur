@@ -1,5 +1,3 @@
-import './Ayeb.css';
-import './AyebM.css';
 import React from 'react';
 function Ayeb() {
   console.log("Ayeb here");
