@@ -222,8 +222,8 @@ class DesktopFleur extends React.Component {
                         <h1 id='pick' className="pre bn">Your</h1>
                         <div className="browncontent whitetext" style={{width:'80%'}}>
                             <h1 id='titlebrown'>Music</h1>
-                            <p id='textbrown' >I Can't live without music.<br></br>I'm a musician, currently playing/learning piano and drums,I want to play as many instruments as possible.
-                                I'm also a music producer, in the learning phase :D. I like jazz, electro, swing, latino, and more, improvising, just playing what I love, and of course, have fun! If you want to play with me or do something, just contact me !</p>
+                            <p>I Can't live without music.</p><p>I'm a musician, currently playing/learning piano and drums, I want to play as many instruments as possible, and become a jazz musician.</p><p>I like jazz, electro, swing, latino, and more, improvising, just playing what I love, and of course, have fun! If you want to play with me or do something, contact me !</p>
+                            <p>I'm also a music producer, in the learning phase :D</p>
                             <div id="spotifydiv">
                                 <iframe id='spotify' src="https://open.spotify.com/embed/track/2Jk4bVmplmMxWdJIfLzuZh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                                 <iframe id='sd' width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108319149&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
@@ -238,6 +238,9 @@ class DesktopFleur extends React.Component {
                         <div className="bluecontent blacktext">
                             <h1 id='titleblue'>Sports</h1>
                             <p id='textblue'>I love sports.</p>
+                            <p>I practised different sports during my childhood and in middle/high school.</p>
+                            <p>Such as swimming, handball, volleyball. I love climbing and gymnastics. Currently, I'm mainly focused on <a style={{color:'black',fontWeight:'bold'}} href="https://en.wikipedia.org/wiki/Calisthenics#Common_exercises" target="_blank">Calisthenics</a> and Cardio.</p>
+                            <p>I'm also a dancer. Shuffle, Batchata, Hip Hop, Rock, and maybe more ! If you wanna talk sports, I'm here :)</p>
                         </div>
                     </div>
                 </div>

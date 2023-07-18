@@ -1,93 +1,175 @@
-#menu{
-    position : fixed;
-    bottom : 0;
+#messageLandscape {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    font-size: 25px;
+    color : red;
+}
+
+#menu {
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    height: 7%;
     display: flex;
     animation: slideup 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes slideup{
-    from{
-        transform: translateY(100%);
-    }
-    to{
-        transform: translateY(0);
-    }
-}
-
-#menu button{
-    height: 60px;
+#menu button {
+    height: 100%;
     width: 25%;
-    transition-duration : 0.4s;
+    transition-duration: 0.4s;
 }
 
-#menunoir{
+#menunoir {
     background-color: black;
     border: none;
 }
 
-#menubrown{
+#menubrown {
     background-color: #863B0B;
     border: none;
 }
 
-#menujaune{
+#menujaune {
     background-color: #FFDE59;
     border: none;
 }
 
-#menublue{
+#menublue {
     background-color: #5CE1E6;
     border: none;
 }
 
-
-#textpickM{
+#textpickM {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%,-70px);
+    transform: translate(-50%, -70px);
     z-index: 1;
     text-align: center;
     font-size: 25px;
     animation: slideuptxt 1s ease-in-out;
 }
 
-@keyframes slideuptxt{
-    from{
-        transform: translate(-50%,100%);
+@keyframes slideuptxt {
+    from {
+        transform: translate(-50%, 100%);
     }
-    to{
-        transform: translate(-50%,-70px);
+
+    to {
+        transform: translate(-50%, -70px);
     }
 }
 
-#fleurpageM{
+#fleurpageM {
     position: fixed;
     width: 100%;
     height: 100%;
 }
 
-#fraiseM{
+#picfraise {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+#fraiseM {
     position: absolute;
-    top : 0;
-    left : 50%;
-    transform: translate(-50%,0) scale(0.4);
-    transform-origin:50% 0%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 120px;
     margin-top: 10px;
     animation: sliddown 1s ease-in-out;
 }
 
-@keyframes sliddown{
-    from{
-        transform: translate(-50%,-100%) scale(0.4);
-    }
-    to{
-        transform: translate(-50%,0) scale(0.4);
-    }
+.cont {
+    display: none;
+}
+
+#contnoir,
+#contbrown,
+#contjaune,
+#contblue {
+    position: relative;
+    width: 100%;
+    height: 73%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.whitetxt {
+    color: white;
+}
+
+.blacktxt {
+    color: black;
+}
+
+#inst,
+#discor,
+#twitc,
+#yt {
+    width: 60px;
+    height: 60px;
+}
+
+#yt {
+    border-radius: 7px;
+}
+
+#socd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+#spotifyd{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
 }
 
 
+@keyframes opanim {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
 
+@keyframes sliddown {
+    from {
+        transform: translate(-50%, -100%);
+    }
+
+    to {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
