@@ -1,0 +1,184 @@
+@keyframes animOp{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#ayebd{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: animOp 1.5s;
+}
+
+#ayebmenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #5271FF;
+    opacity : 82%;
+}
+
+
+#ayebmenubtn{
+    color : white;
+    font-weight: bold;
+    font-size: 42px;
+    border: 5px solid #5CE1E6;
+    border-radius: 10px;
+    height: 27%;
+    width: 33%;
+    transition-duration: 0.4s;
+}
+
+#ayebmenubtn:hover{
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.one:hover,.three:hover{
+    transform: scale(1.1);
+}
+
+.two:hover{
+    transform: translate(-50%, 0) scale(1.1);
+}
+
+.one{
+    background: linear-gradient(90deg,#004AAD 0%, #CB6CE6 100%);
+    position : absolute;
+    top: 16.5%;
+    left: 16.5%;
+    animation: anim1 1.5s linear;
+}
+
+.two{
+    background: linear-gradient(90deg,#CB6CE6 0%,#004AAD 100%);
+    position : absolute;
+    top: 36%;
+    left: 50%; 
+    transform: translate(-50%, 0);
+    animation: anim2 1.5s linear;
+}
+
+.three{
+    background: linear-gradient(90deg,#004AAD 0%, #CB6CE6 100%);
+    position : absolute;
+    top: 56%;
+    right: 16.5%; 
+    animation: anim3 1.5s linear;
+}
+
+.hidstart{
+    left : -100%;
+}
+
+#ayebretbtn{
+    float : right;
+    margin: 20px;
+    font-size: 20px;
+    border : none;
+    background: transparent;
+    display : none;
+    text-decoration: underline;
+    z-index: 1000;
+}
+
+#ayebretbtn:hover{
+    cursor: pointer;
+}
+
+#resumed,#portd,#projd{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#histo,#waveblue,#waveorange{
+    position : absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+#bhome{
+    float : left;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color : #5271FF;
+    border-radius: 5px;
+    border : none;
+    background: white;
+    z-index: 1000;
+}
+
+#bhome:hover{
+    cursor: pointer;
+}
+
+
+@keyframes anim1{
+    0%{
+        left : -33%;
+    }
+    50%{
+        left : -33%;
+    }
+    100%{
+        left : 16.5%;
+    }
+}
+
+@keyframes anim2{
+    0%{
+        top : -100%;
+    }
+    50%{
+        top : -36%;
+    }
+    100%{
+        top : 36%;
+    }
+}
+
+@keyframes anim3{
+    0%{
+        right : -33%;
+    }
+    50%{
+        right : -33%;
+    }
+    100%{
+        right : 16.5%;
+    }
+}
+
+@keyframes slideouttoright{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes slideouttoleft{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}

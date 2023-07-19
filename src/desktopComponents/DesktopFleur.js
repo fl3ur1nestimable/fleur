@@ -171,6 +171,14 @@ class DesktopFleur extends React.Component {
         pickp.style.display = "none";
     }
 
+    goHome = () => {
+        let ayebmenu = document.getElementById('fleurpage');
+        ayebmenu.style.animation = 'zoomout 1s ease-in-out forwards';
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 1200);
+    }
+
 
     render() {
         return (
@@ -243,6 +251,7 @@ class DesktopFleur extends React.Component {
                             <p>I'm also a dancer. Shuffle, Batchata, Hip Hop, Rock, and maybe more ! If you wanna talk sports, I'm here :)</p>
                         </div>
                     </div>
+                    <button id='bhomefleur' onClick={() => this.goHome()}>Home</button>
                 </div>
             </>
         )

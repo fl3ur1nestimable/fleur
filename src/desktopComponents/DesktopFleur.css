@@ -243,12 +243,39 @@
     font-weight: 100;
 }
 
+
+#bhomefleur{
+    position: absolute;
+    float : left;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color : white;
+    border-radius: 5px;
+    border : none;
+    background: black;
+    z-index: 1000;
+}
+
+#bhomefleur:hover{
+    cursor: pointer;
+}
+
 @keyframes zoomin{
     from{
         transform : scale(0);
     }
     to{
         transform : scale(1);
+    }
+}
+
+@keyframes zoomout{
+    from{
+        transform : scale(1);
+    }
+    to{
+        transform : scale(0);
     }
 }
 

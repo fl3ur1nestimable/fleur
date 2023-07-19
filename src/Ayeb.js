@@ -1,23 +1,21 @@
-import React from 'react';
+import DesktopAyeb from './desktopComponents/DesktopAyeb';
+import MobileAyeb from './mobileComponents/MobileAyeb';
+import {React,useState,useEffect} from 'react';
 function Ayeb() {
-  console.log("Ayeb here");
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 1400;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
+
   return (
     <>
       {
-        (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? (
-          <>
-            42
-          </>
+        (width<breakpoint) ? (
+          <MobileAyeb/>
         ) : (
-          <>
-            <div id='ayebpage'>
-              <div id='banner ayeb'>
-                <div id='menu'>
-                  42
-                </div>
-              </div>
-            </div>
-          </>
+          <DesktopAyeb/>
         )
       }
     </>
